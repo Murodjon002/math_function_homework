@@ -12,6 +12,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: codeschooluz/math_function_test
+          token: ${{secrets.TEST_KEY}}
           path: test
       - name: Install dependencies
         uses: actions/setup-python@v2
